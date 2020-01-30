@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>TauCode.Mq.NHibernate</id>
+    <version>1.0.0.0-dev-2020-01-30-22-46</version>
+    <authors>TauCode</authors>
+    <owners>TauCode</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/taucode/taucode.mq.nhibernate</projectUrl>
+    <description>NHibernate support for TauCode MQ via Autofac</description>
+    <releaseNotes>
+      Initial version
+    </releaseNotes>
+    <tags>taucode message queue nhibernate</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\LICENSE.txt" target="" />
+    <file src="..\src\TauCode.Mq.NHibernate\bin\Release\netstandard2.0\TauCode.Mq.NHibernate.dll" target="lib\netstandard2.0" />
+    <file src="..\src\TauCode.Mq.NHibernate\bin\Release\netstandard2.0\TauCode.Mq.NHibernate.pdb" target="lib\netstandard2.0" />
+  </files>
+</package>
