@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Mq.NHibernate</id>
-    <version>1.0.0.0-dev-2020-01-31-00-06</version>
+    <version>1.0.0.0-dev-2020-02-12-18-26</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,12 +10,12 @@
     <projectUrl>https://github.com/taucode/taucode.mq.nhibernate</projectUrl>
     <description>NHibernate support for TauCode MQ via Autofac</description>
     <releaseNotes>
-      Initial version
+      Updated references.
     </releaseNotes>
     <tags>taucode message queue nhibernate</tags>
     <dependencies>
       <dependency id="NHibernate" version="5.2.6" />
-      <dependency id="TauCode.Mq.Autofac" version="1.0.0-dev-2020-01-30-22-29" />
+      <dependency id="TauCode.Mq.Autofac" version="1.0.0-dev-2020-02-12-18-20" />
     </dependencies>
   </metadata>
   <files>
