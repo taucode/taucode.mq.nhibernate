@@ -15,7 +15,7 @@
     <tags>taucode message queue nhibernate</tags>
     <dependencies>
       <dependency id="NHibernate" version="5.2.6" />
-      <dependency id="TauCode.Mq.Autofac" version="1.0.0-dev-2020-02-12-18-20" />
+      <dependency id="TauCode.Mq.Autofac" version="1.0.0-dev-2020-02-13-20-26" />
     </dependencies>
   </metadata>
   <files>

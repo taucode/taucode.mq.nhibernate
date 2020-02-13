@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="NHibernate" Version="5.2.6" />
-    <PackageReference Include="TauCode.Mq.Autofac" Version="1.0.0-dev-2020-02-12-18-20" />
+    <PackageReference Include="TauCode.Mq.Autofac" Version="1.0.0-dev-2020-02-13-20-26" />
   </ItemGroup>
 
 </Project>
