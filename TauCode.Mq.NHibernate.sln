@@ -18,9 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8DEBEEEF-133
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7D22E592-AEB8-48E4-AFC2-92C3157ED18D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.Mq.NHibernate", "src\TauCode.Mq.NHibernate\TauCode.Mq.NHibernate.csproj", "{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate", "src\TauCode.Mq.NHibernate\TauCode.Mq.NHibernate.csproj", "{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.Mq.NHibernate.Tests", "tests\TauCode.Mq.NHibernate.Tests\TauCode.Mq.NHibernate.Tests.csproj", "{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests", "tests\TauCode.Mq.NHibernate.Tests\TauCode.Mq.NHibernate.Tests.csproj", "{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FC2EC4C2-4454-4D24-9303-C0F3CEDB6892}"
+	ProjectSection(SolutionItems) = preProject
+		build\azure-pipelines-dev.yml = build\azure-pipelines-dev.yml
+		build\azure-pipelines.yml = build\azure-pipelines.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
