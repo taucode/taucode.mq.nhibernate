@@ -36,11 +36,11 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: 'nuget\TauCode.Mq.EasyNetQ.Cli.nuspec'
+    packagesToPack: 'nuget\TauCode.Mq.NHibernate.nuspec'
     versioningScheme: 'off'
 
 - task: NuGetCommand@2
   inputs:
     command: 'custom'
-    arguments: 'push $(Build.ArtifactStagingDirectory)\TauCode.Mq.EasyNetQ.Cli.1.0.0-dev-2020-03-15-08-58.nupkg -ApiKey $(NUGET_API_KEY) -Source https://api.nuget.org/v3/index.json'
+    arguments: 'push $(Build.ArtifactStagingDirectory)\TauCode.Mq.NHibernate.1.0.0-dev-2020-03-15-09-06.nupkg -ApiKey $(NUGET_API_KEY) -Source https://api.nuget.org/v3/index.json'
 
