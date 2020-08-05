@@ -16,17 +16,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{1BE52EC4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8DEBEEEF-1338-4DB7-8D03-0D61140C3D9B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7D22E592-AEB8-48E4-AFC2-92C3157ED18D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7D22E592-AEB8-48E4-AFC2-92C3157ED18D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate", "src\TauCode.Mq.NHibernate\TauCode.Mq.NHibernate.csproj", "{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests", "tests\TauCode.Mq.NHibernate.Tests\TauCode.Mq.NHibernate.Tests.csproj", "{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FC2EC4C2-4454-4D24-9303-C0F3CEDB6892}"
 	ProjectSection(SolutionItems) = preProject
 		build\azure-pipelines-dev.yml = build\azure-pipelines-dev.yml
 		build\azure-pipelines.yml = build\azure-pipelines.yml
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests", "test\TauCode.Mq.NHibernate.Tests\TauCode.Mq.NHibernate.Tests.csproj", "{41395ECC-43FA-4997-BC72-E1EAD464D76D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,17 +38,17 @@ Global
 		{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41395ECC-43FA-4997-BC72-E1EAD464D76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41395ECC-43FA-4997-BC72-E1EAD464D76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41395ECC-43FA-4997-BC72-E1EAD464D76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41395ECC-43FA-4997-BC72-E1EAD464D76D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7} = {8DEBEEEF-1338-4DB7-8D03-0D61140C3D9B}
-		{4C3ED118-C5F2-4DC5-80DB-A5152B1921B3} = {7D22E592-AEB8-48E4-AFC2-92C3157ED18D}
+		{41395ECC-43FA-4997-BC72-E1EAD464D76D} = {7D22E592-AEB8-48E4-AFC2-92C3157ED18D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5DBE4E4-C875-4CB4-82F2-2EAE73E09B16}
