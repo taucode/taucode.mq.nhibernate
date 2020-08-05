@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NHibernate" Version="5.2.7" />
-    <PackageReference Include="TauCode.Mq.Autofac" Version="1.0.0-dev-2020-03-16-23-44" />
+    <PackageReference Include="NHibernate" Version="5.3.1" />
+    <PackageReference Include="TauCode.Mq.Autofac" Version="1.0.1" />
   </ItemGroup>
 
 </Project>
