@@ -30,6 +30,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.Mq.NHibernate.Tests.Integration", "test\TauCode.Mq.NHibernate.Tests.Integration\TauCode.Mq.NHibernate.Tests.Integration.csproj", "{853C1900-8BF0-4E77-9A18-E6C838E53E38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.Mq.NHibernate.Tests.App", "test\TauCode.Mq.NHibernate.Tests.App\TauCode.Mq.NHibernate.Tests.App.csproj", "{780D6CD6-C36E-423D-8605-6F74507366B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{853C1900-8BF0-4E77-9A18-E6C838E53E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{853C1900-8BF0-4E77-9A18-E6C838E53E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{853C1900-8BF0-4E77-9A18-E6C838E53E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780D6CD6-C36E-423D-8605-6F74507366B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780D6CD6-C36E-423D-8605-6F74507366B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780D6CD6-C36E-423D-8605-6F74507366B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780D6CD6-C36E-423D-8605-6F74507366B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{6ACF4520-145D-4CBA-AA59-4AFB0B559FA7} = {8DEBEEEF-1338-4DB7-8D03-0D61140C3D9B}
 		{41395ECC-43FA-4997-BC72-E1EAD464D76D} = {7D22E592-AEB8-48E4-AFC2-92C3157ED18D}
 		{853C1900-8BF0-4E77-9A18-E6C838E53E38} = {7D22E592-AEB8-48E4-AFC2-92C3157ED18D}
+		{780D6CD6-C36E-423D-8605-6F74507366B3} = {7D22E592-AEB8-48E4-AFC2-92C3157ED18D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5DBE4E4-C875-4CB4-82F2-2EAE73E09B16}
