@@ -1,0 +1,3 @@
+2020-10-08
+==========
+    1. Get rid of cqrs stuff in tests. It creates a sort of circular dep.
