@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using TauCode.Cqrs.Commands;
 using TauCode.Mq.NHibernate.Tests.App.Core.Features.Notes.CreateNote;
@@ -19,7 +20,7 @@ namespace TauCode.Mq.NHibernate.Tests.App.AppHost.Features.Notes.CreateNote
         [Route("api/notes")]
         public async Task<IActionResult> CreateNote(CreateNoteCommand command)
         {
-            await _commandDispatcher.DispatchAsync(command);
+            await _commandDispatcher.DispatchAsync(command, CancellationToken.None);
             return this.Ok();
         }
     }

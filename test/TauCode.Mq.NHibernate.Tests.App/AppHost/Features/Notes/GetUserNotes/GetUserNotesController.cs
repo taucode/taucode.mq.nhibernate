@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 using System.Threading.Tasks;
 using TauCode.Cqrs.Queries;
 using TauCode.Mq.NHibernate.Tests.App.Core.Features.Notes.GetUserNotes;
@@ -24,7 +25,7 @@ namespace TauCode.Mq.NHibernate.Tests.App.AppHost.Features.Notes.GetUserNotes
                 UserId = userId,
             };
 
-            await _queryRunner.RunAsync(query);
+            await _queryRunner.RunAsync(query, CancellationToken.None);
 
             return this.Ok(query.GetResult());
         }
