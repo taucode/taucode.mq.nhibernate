@@ -70,7 +70,7 @@ namespace TauCode.Mq.NHibernate.Tests.Integration
             var message = new NewNoteMessage
             {
                 CorrelationId = new Guid("3794470c-c02c-40af-921d-b9a2730160c0").ToString(),
-                CreatedAt = "2020-01-01Z".ToUtcDayOffset().AddHours(1.5),
+                CreatedAt = "2020-01-01Z".ToUtcDateOffset().AddHours(1.5),
                 UserId = "ak@m.net",
                 Subject = "Ocean",
                 Body = "Ready for.",
