@@ -8,13 +8,24 @@ namespace TauCode.Mq.NHibernate
 {
     public class NHibernateMessageHandlerContext : AutofacMessageHandlerContext
     {
+        #region Fields
+
         private ISession _session;
         private ITransaction _transaction;
+
+
+        #endregion
+
+        #region Constructor
 
         public NHibernateMessageHandlerContext(ILifetimeScope contextLifetimeScope)
             : base(contextLifetimeScope)
         {
         }
+
+        #endregion
+
+        #region Overridden
 
         public override void Begin()
         {
@@ -48,5 +59,7 @@ namespace TauCode.Mq.NHibernate
 
             base.Dispose();
         }
+
+        #endregion
     }
 }

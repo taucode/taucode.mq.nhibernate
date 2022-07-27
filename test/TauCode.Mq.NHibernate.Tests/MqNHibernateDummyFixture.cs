@@ -8,7 +8,7 @@ namespace TauCode.Mq.NHibernate.Tests
         [Test]
         public void MqNHibernateDummyTest()
         {
-            Assert.Pass("Added for CI.");
+            Assert.Pass("Added for Azure DevOps compliance.");
         }
     }
 }
