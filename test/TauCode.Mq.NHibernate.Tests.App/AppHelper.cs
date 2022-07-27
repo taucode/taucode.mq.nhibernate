@@ -14,7 +14,7 @@ using TauCode.Cqrs.Autofac;
 using TauCode.Cqrs.Commands;
 using TauCode.Cqrs.Queries;
 using TauCode.Cqrs.Validation;
-using TauCode.Extensions;
+using TauCode.IO;
 
 namespace TauCode.Mq.NHibernate.Tests.App
 {
@@ -64,7 +64,7 @@ namespace TauCode.Mq.NHibernate.Tests.App
 
         public static Tuple<string, string> CreateSQLiteDatabase()
         {
-            var tempDbFilePath = FileTools.CreateTempFilePath("zunit", ".sqlite");
+            var tempDbFilePath = PathExtensions.CreateTempFilePath("zunit", ".sqlite");
             SQLiteConnection.CreateFile(tempDbFilePath);
 
             var connectionString = $"Data Source={tempDbFilePath};Version=3;";

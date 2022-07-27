@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29609.76
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{E5112C86-3B35-456E-A3D2-90C4C27477C6}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,14 +23,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FC2EC4C2-4454-4D24-9303-C0F3CEDB6892}"
 	ProjectSection(SolutionItems) = preProject
 		build\azure-pipelines-dev.yml = build\azure-pipelines-dev.yml
-		build\azure-pipelines.yml = build\azure-pipelines.yml
+		build\azure-pipelines-main.yml = build\azure-pipelines-main.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests", "test\TauCode.Mq.NHibernate.Tests\TauCode.Mq.NHibernate.Tests.csproj", "{41395ECC-43FA-4997-BC72-E1EAD464D76D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.Mq.NHibernate.Tests.Integration", "test\TauCode.Mq.NHibernate.Tests.Integration\TauCode.Mq.NHibernate.Tests.Integration.csproj", "{853C1900-8BF0-4E77-9A18-E6C838E53E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests.Integration", "test\TauCode.Mq.NHibernate.Tests.Integration\TauCode.Mq.NHibernate.Tests.Integration.csproj", "{853C1900-8BF0-4E77-9A18-E6C838E53E38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.Mq.NHibernate.Tests.App", "test\TauCode.Mq.NHibernate.Tests.App\TauCode.Mq.NHibernate.Tests.App.csproj", "{780D6CD6-C36E-423D-8605-6F74507366B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Mq.NHibernate.Tests.App", "test\TauCode.Mq.NHibernate.Tests.App\TauCode.Mq.NHibernate.Tests.App.csproj", "{780D6CD6-C36E-423D-8605-6F74507366B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
