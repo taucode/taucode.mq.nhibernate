@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using TauCode.Mq.NHibernate.Tests.App.Client.Dto.Notes;
+﻿using TauCode.Mq.NHibernate.Tests.App.Client.Dto.Notes;
 
-namespace TauCode.Mq.NHibernate.Tests.App.Client
+namespace TauCode.Mq.NHibernate.Tests.App.Client;
+
+public interface IAppClient
 {
-    public interface IAppClient
-    {
-        Task<IList<NoteDto>> GetUserNotes(string userId);
-    }
+    Task<IList<NoteDto>> GetUserNotes(string userId);
 }

@@ -1,6 +1,5 @@
-﻿namespace TauCode.Mq.NHibernate.Tests.App.Client.Dto.Notes
+﻿namespace TauCode.Mq.NHibernate.Tests.App.Client.Dto.Notes;
+
+public class CreateNoteCommandDto
 {
-    public class CreateNoteCommandDto
-    {
-    }
 }

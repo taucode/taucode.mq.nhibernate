@@ -1,33 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Threading;
-using System.Threading.Tasks;
 using TauCode.Cqrs.Queries;
 using TauCode.Mq.NHibernate.Tests.App.Core.Features.Notes.GetUserNotes;
 
-namespace TauCode.Mq.NHibernate.Tests.App.AppHost.Features.Notes.GetUserNotes
+namespace TauCode.Mq.NHibernate.Tests.App.AppHost.Features.Notes.GetUserNotes;
+
+[ApiController]
+public class GetUserNotesController : ControllerBase
 {
-    [ApiController]
-    public class GetUserNotesController : ControllerBase
+    private readonly IQueryRunner _queryRunner;
+
+    public GetUserNotesController(IQueryRunner queryRunner)
     {
-        private readonly IQueryRunner _queryRunner;
+        _queryRunner = queryRunner;
+    }
 
-        public GetUserNotesController(IQueryRunner queryRunner)
+    [HttpGet]
+    [Route("api/notes/by-user-id/{userId}")]
+    public async Task<IActionResult> GetUserNotes([FromRoute] string userId)
+    {
+        var query = new GetUserNotesQuery
         {
-            _queryRunner = queryRunner;
-        }
+            UserId = userId,
+        };
 
-        [HttpGet]
-        [Route("api/notes/by-user-id/{userId}")]
-        public async Task<IActionResult> GetUserNotes([FromRoute]string userId)
-        {
-            var query = new GetUserNotesQuery
-            {
-                UserId = userId,
-            };
+        await _queryRunner.RunAsync(query, CancellationToken.None);
 
-            await _queryRunner.RunAsync(query, CancellationToken.None);
-
-            return this.Ok(query.GetResult());
-        }
+        return this.Ok(query.GetResult());
     }
 }

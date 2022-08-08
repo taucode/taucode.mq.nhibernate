@@ -1,11 +1,10 @@
 ﻿using TauCode.Cqrs.Abstractions;
 
-namespace TauCode.Mq.NHibernate.Tests.App.Core.Features.Notes.CreateNote
+namespace TauCode.Mq.NHibernate.Tests.App.Core.Features.Notes.CreateNote;
+
+public class CreateNoteCommand : ICommand
 {
-    public class CreateNoteCommand : ICommand
-    {
-        public string UserId { get; set; }
-        public string Subject { get; set; }
-        public string Body { get; set; }
-    }
+    public string UserId { get; set; }
+    public string Subject { get; set; }
+    public string Body { get; set; }
 }
