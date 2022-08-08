@@ -1,14 +1,13 @@
 ﻿using NUnit.Framework;
 
-namespace TauCode.Mq.NHibernate.Tests
+namespace TauCode.Mq.NHibernate.Tests;
+
+[TestFixture]
+public class MqNHibernateDummyFixture
 {
-    [TestFixture]
-    public class MqNHibernateDummyFixture
+    [Test]
+    public void MqNHibernateDummyTest()
     {
-        [Test]
-        public void MqNHibernateDummyTest()
-        {
-            Assert.Pass("Added for Azure DevOps compliance.");
-        }
+        Assert.Pass("Added for Azure DevOps compliance.");
     }
 }

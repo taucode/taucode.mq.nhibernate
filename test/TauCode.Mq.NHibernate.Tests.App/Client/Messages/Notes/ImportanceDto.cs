@@ -1,10 +1,9 @@
-﻿namespace TauCode.Mq.NHibernate.Tests.App.Client.Messages.Notes
+﻿namespace TauCode.Mq.NHibernate.Tests.App.Client.Messages.Notes;
+
+public enum ImportanceDto
 {
-    public enum ImportanceDto
-    {
-        Unknown = 0,
-        Low = 1,
-        Medium = 2,
-        High = 3,
-    }
+    Unknown = 0,
+    Low = 1,
+    Medium = 2,
+    High = 3,
 }

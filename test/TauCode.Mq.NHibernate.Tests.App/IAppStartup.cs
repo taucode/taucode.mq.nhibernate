@@ -1,11 +1,10 @@
 ﻿using Autofac;
 
-namespace TauCode.Mq.NHibernate.Tests.App
+namespace TauCode.Mq.NHibernate.Tests.App;
+
+public interface IAppStartup
 {
-    public interface IAppStartup
-    {
-        ILifetimeScope AutofacContainer { get; }
-        string ConnectionString { get; }
-        string TempDbFilePath { get; }
-    }
+    ILifetimeScope AutofacContainer { get; }
+    string ConnectionString { get; }
+    string TempDbFilePath { get; }
 }
