@@ -1,6 +1,4 @@
-﻿using TauCode.Mq.Abstractions;
-
-namespace TauCode.Mq.NHibernate.Tests.App.Client.Messages.Notes;
+﻿namespace TauCode.Mq.NHibernate.Tests.App.Client.Messages.Notes;
 
 public class NewNoteMessage : IMessage
 {

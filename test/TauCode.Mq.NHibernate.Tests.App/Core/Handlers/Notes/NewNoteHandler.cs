@@ -3,7 +3,7 @@ using TauCode.Mq.NHibernate.Tests.App.Domain.Notes;
 
 namespace TauCode.Mq.NHibernate.Tests.App.Core.Handlers.Notes;
 
-public class NewNoteHandler : AsyncMessageHandlerBase<NewNoteMessage>
+public class NewNoteHandler : MessageHandlerBase<NewNoteMessage>
 {
     private readonly INoteRepository _noteRepository;
 
@@ -12,7 +12,7 @@ public class NewNoteHandler : AsyncMessageHandlerBase<NewNoteMessage>
         _noteRepository = noteRepository;
     }
 
-    public override Task HandleAsync(NewNoteMessage message, CancellationToken cancellationToken)
+    protected override Task HandleAsyncImpl(NewNoteMessage message, CancellationToken cancellationToken = default)
     {
         var note = new Note(message.UserId, message.Subject, message.Body);
         _noteRepository.Save(note);

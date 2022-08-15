@@ -1,4 +1,4 @@
-﻿using TauCode.Cqrs.Abstractions;
+﻿using TauCode.Cqrs;
 
 namespace TauCode.Mq.NHibernate.Tests.App.Core.Features.Notes.CreateNote;
 

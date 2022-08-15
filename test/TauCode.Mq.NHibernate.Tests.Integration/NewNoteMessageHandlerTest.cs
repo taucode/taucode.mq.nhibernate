@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using EasyNetQ;
-using EasyNetQ.NonGeneric;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
@@ -78,7 +77,7 @@ public class NewNoteMessageHandlerTest
         };
 
         // Act
-        bus.Publish(typeof(NewNoteMessage), message);
+        bus.PubSub.Publish(message);
 
         await Task.Delay(300);
 

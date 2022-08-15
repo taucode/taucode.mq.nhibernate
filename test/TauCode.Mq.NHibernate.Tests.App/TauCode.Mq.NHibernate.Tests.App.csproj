@@ -13,11 +13,11 @@
     <PackageReference Include="Inflector.NetStandard" Version="1.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.8" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.116" />
-    <PackageReference Include="TauCode.Cqrs.Autofac" Version="1.5.5-alpha.1.2022-08-11.23-47" />
-    <PackageReference Include="TauCode.Cqrs.NHibernate" Version="1.5.5-alpha.1.2022-08-12.10-35" />
-    <PackageReference Include="TauCode.Cqrs.Validation" Version="1.5.5-alpha.1.2022-08-11.23-47" />
-    <PackageReference Include="TauCode.IO" Version="1.5.5-alpha.1.2022-08-11.23-47" />
-    <PackageReference Include="TauCode.Mq.EasyNetQ" Version="1.5.5-alpha.1.2022-08-11.23-47" />
+    <PackageReference Include="TauCode.Cqrs.Autofac" Version="1.6.0-alpha.1.2022-08-15.14-31" />
+    <PackageReference Include="TauCode.Cqrs.NHibernate" Version="1.6.0-alpha.1.2022-08-15.14-31" />
+    <PackageReference Include="TauCode.Cqrs.Validation" Version="1.6.0-alpha.1.2022-08-15.14-31" />
+    <PackageReference Include="TauCode.IO" Version="1.6.0-alpha.1.2022-08-15.14-31" />
+    <PackageReference Include="TauCode.Mq.EasyNetQ" Version="1.6.0-alpha.1.2022-08-15.14-31" />
   </ItemGroup>
 
   <ItemGroup>

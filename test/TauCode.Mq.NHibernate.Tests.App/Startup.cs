@@ -89,7 +89,8 @@ public class Startup : IAppStartup
             {
                 var subscriber = new EasyNetQMessageSubscriber(
                     context.Resolve<IMessageHandlerContextFactory>(),
-                    this.RabbitMQConnectionString);
+                    this.RabbitMQConnectionString,
+                    null);
 
                 subscriber.Subscribe(typeof(NewNoteHandler));
 
