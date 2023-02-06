@@ -9,9 +9,8 @@ public class NHibernateMessageHandlerContext : AutofacMessageHandlerContext
 {
     #region Fields
 
-    private ISession _session;
-    private ITransaction _transaction;
-
+    private ISession? _session;
+    private ITransaction? _transaction;
 
     #endregion
 
@@ -26,7 +25,7 @@ public class NHibernateMessageHandlerContext : AutofacMessageHandlerContext
 
     #region Overridden
 
-    public override void Begin()
+    public override Task BeginAsync(CancellationToken cancellationToken = default)
     {
         if (_session != null)
         {
@@ -36,17 +35,18 @@ public class NHibernateMessageHandlerContext : AutofacMessageHandlerContext
         _session = (ISession)this.GetService(typeof(ISession));
         _session.FlushMode = FlushMode.Commit;
         _transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted);
+        return Task.CompletedTask;
     }
 
-    public override void End()
+    public override async Task EndAsync(CancellationToken cancellationToken = default)
     {
         if (_session == null)
         {
             throw new InvalidOperationException("Session not open.");
         }
 
-        _session.Flush();
-        _transaction.Commit();
+        await _session.FlushAsync(cancellationToken);
+        await _transaction!.CommitAsync(cancellationToken);
 
         _session = null;
         _transaction = null;
